@@ -8,6 +8,9 @@ body {
     padding: 0;
     font-weight: bold;
 }
+p{
+    text-indent: 2em;
+}
 header {
     background-color: #000000df;
     color:white;
@@ -18,15 +21,17 @@ header {
 
 }
 .header-photo>img{
+    width: 1200px;
+    height: 400px;
     opacity: 0; 
     transform: translateY(-20px); 
     animation: fadeIn 1.5s ease-out forwards; 
 }
-/* @keyframes ile animasyon */
+
 @keyframes fadeIn {
     to {
-      opacity: 1; /* Görünür hale gel */
-      transform: translateY(0); /* Normal konumuna gel */
+      opacity: 1; 
+      transform: translateY(0); 
     }
   }
 
@@ -158,11 +163,8 @@ i{
     color: black;
     transition: all 0.5s;
 }
-#project1{
-    padding: 20px;
-    height: 200vh;
-}
 .Scroll-to-top {
+    z-index: 1000;
     font-weight: thin;
     position: fixed;
     padding-left:10px ;
@@ -202,11 +204,68 @@ i{
     transition: color 0.3s ease;
 }
 
-section{
-    padding: 20px;
-    color: white;
-    display: inline-block;
+#index-photo-1{
+    opacity: 0; 
+    transform: translateX(-500px); 
+    animation: fadeIn 1s ease-out forwards; 
 }
+
+#index-photo-2{
+    opacity: 0; 
+    transform: translateY(500px); 
+    animation: fadeIn 1s ease-out forwards; 
+}
+#index-photo-3{
+    opacity: 0; 
+    transform: translateX(500px); 
+    animation: fadeIn 1s ease-out forwards; 
+}
+
+#index-main{
+    background-color: #000000f5;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+#index-main-1{
+    background-color: #000000f5;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#index-main>div>h1{
+    font-size: 5em;
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+}
+#index-main-1>div>div>h2{
+    font-size: 1.5em;
+    font-weight: 1000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+#index-description{
+    opacity: 0; 
+    transform: translateX(500px); 
+    animation: fadeIn 1.5s ease-out forwards; ;
+}
+#index-title{
+    opacity: 0; 
+    transform: translateX(-500px); 
+    animation: fadeIn 1.5s ease-out forwards; 
+}
+
+
+
 
 
     
